@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://movie-website-ekxt.onrender.com";
 
 export const getPopularMovies = async () => {
     const response = await fetch(`${BASE_URL}/popular`);
