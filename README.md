@@ -1,4 +1,5 @@
 <div align="center">
+ 
 # 🎬 CineVault
 
 **A full-stack movie discovery web application powered by TMDB**
