@@ -2,6 +2,7 @@
   padding: 2rem;
   min-height: 100vh;
   color: white;
+  box-sizing: border-box;
 }
 
 .trailer-section {
@@ -37,6 +38,90 @@
   margin-top: 2rem;
 }
 
+.movie-info-section {
+  max-width: 1000px;
+  margin: 3rem auto 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+}
+
+.movie-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fbbf24;
+  line-height: 1.2;
+}
+
+.movie-meta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.movie-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rating {
+  color: #fbbf24;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.year,
+.runtime {
+  color: #d1d5db;
+}
+
+.movie-overview {
+  margin: 2rem 0;
+}
+
+.movie-overview h2 {
+  color: #fbbf24;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.movie-overview p {
+  color: #e5e7eb;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.movie-genres {
+  margin-top: 2rem;
+}
+
+.movie-genres h3 {
+  color: #fbbf24;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.genres-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.genre-tag {
+  background: rgba(251, 191, 36, 0.2);
+  border: 1px solid #fbbf24;
+  color: #fbbf24;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+}
+
+/* Tablet */
 @media (max-width: 768px) {
   .movie-details {
     padding: 1rem;
@@ -47,7 +132,21 @@
   }
 
   .trailer-embed-wrapper iframe {
-    height: 400px;
+    height: 350px;
+  }
+
+  .movie-info-section {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .movie-header h1 {
+    font-size: 2rem;
+  }
+
+  .movie-meta {
+    gap: 1rem;
+    font-size: 1rem;
   }
 }
 
@@ -57,96 +156,65 @@
   }
 
   .section-header h2 {
-    font-size: 1.5rem;
-  }
-
-  .trailer-embed-wrapper iframe {
-    height: 220px;
-    border-radius: 8px;
-  }
-
-  .empty-message {
-    font-size: 1rem;
-  }
-}
-
-  .movie-info-section {
-    max-width: 1000px;
-    margin: 3rem auto 0;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .movie-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #fbbf24;
-  }
-
-  .movie-meta {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-  }
-
-  .movie-meta span {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .rating {
-    color: #fbbf24;
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-
-  .year,
-  .runtime {
-    color: #d1d5db;
-  }
-
-  .movie-overview {
-    margin: 2rem 0;
-  }
-
-  .movie-overview h2 {
-    color: #fbbf24;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .movie-overview p {
-    color: #e5e7eb;
-    line-height: 1.8;
-    font-size: 1.05rem;
-  }
-
-  .movie-genres {
-    margin-top: 2rem;
-  }
-
-  .movie-genres h3 {
-    color: #fbbf24;
     font-size: 1.3rem;
     margin-bottom: 1rem;
   }
 
-  .genres-list {
-    display: flex;
-    flex-wrap: wrap;
+  .trailer-embed-wrapper iframe {
+    height: 210px;
+    border-radius: 8px;
+  }
+
+  .movie-info-section {
+    padding: 1rem;
+    margin-top: 1.25rem;
+    border-radius: 8px;
+  }
+
+  .movie-header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .movie-meta {
     gap: 0.75rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .rating {
+    font-size: 1rem;
+  }
+
+  .movie-overview {
+    margin: 1.25rem 0;
+  }
+
+  .movie-overview h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .movie-overview p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .movie-genres {
+    margin-top: 1.25rem;
+  }
+
+  .movie-genres h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
   }
 
   .genre-tag {
-    background: rgba(251, 191, 36, 0.2);
-    border: 1px solid #fbbf24;
-    color: #fbbf24;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.95rem;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.85rem;
   }
+
+  .empty-message {
+    font-size: 0.9rem;
+  }
+}
